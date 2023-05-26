@@ -1,4 +1,4 @@
-# 두 수의 합
+# 3273: 두 수의 합
 
 n = int(input())
 lst = list(map(int, input().split()))
