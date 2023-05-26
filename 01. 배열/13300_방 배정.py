@@ -1,4 +1,4 @@
-# 방 배정
+# 13300: 방 배정
 import math
 
 N, K = list(map(int, input().split()))
