@@ -1,4 +1,4 @@
-# 애너그램 만들기
+# 1919: 애너그램 만들기
 
 str1 = list(input())
 str2 = list(input())
