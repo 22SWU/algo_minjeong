@@ -1,4 +1,4 @@
-# 개수 세기
+# 10807: 개수 세기
 
 n = int(input())
 lst = list(map(int, input().split()))
