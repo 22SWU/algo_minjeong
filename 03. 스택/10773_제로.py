@@ -1,13 +1,16 @@
 # 10773: 제로
 
-K = int(input())
+import sys
+
+k = int(input())
 stack = []
 
-for i in range(K):
-    inNum = int(input())
-    if inNum==0 and stack:
+for _ in range(k):
+    num = int(sys.stdin.readline())
+
+    if stack and num==0:
         stack.pop()
-    else:
-        stack.append(inNum)
+    elif num>0:
+        stack.append(num)
 
 print(sum(stack))
