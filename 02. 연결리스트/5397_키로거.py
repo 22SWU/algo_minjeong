@@ -1,42 +1,22 @@
 # 5397: 키로거
 
-import sys
-
 for _ in range(int(input())):
-    keyIn = list(sys.stdin.readline().split())
+    keyIn = input()
     left = []
     right = []
 
     for key in keyIn:
-        if key=="<" and left:
-            right.append(left.pop())
-        elif key==">" and right:
-            left.append(right.pop())
-        elif key=="-" and left:
-            left.pop()
+        if key=="<":
+            if left:
+                right.append(left.pop())
+        elif key==">":
+            if right:
+                left.append(right.pop())
+        elif key=="-":
+            if left:
+                left.pop()
         else:
             left.append(key)
     
-    answer = left + right[::-1]
+    answer = left+right[::-1]
     print(''.join(answer))
-
-# t = int(input())
-
-# for _ in range(t):
-#     l_list = []
-#     r_list = []
-#     data = input()
-#     for i in data:
-#         if i == '-':
-#             if l_list: #왼쪽 스택에 있을 경우
-#                 l_list.pop()
-#         elif i == '<': # 왼스택에 있는 문자 오른쪽 스택으로
-#             if l_list:
-#                 r_list.append(l_list.pop())
-#         elif i == '>': # 오스택에 있는 문자 왼쪽 스택으로
-#             if r_list:
-#                 l_list.append(r_list.pop())
-#         else:
-#             l_list.append(i)
-#     l_list.extend(reversed(r_list)) # 오른쪽 스택에 있는 문자들은 뒤집어서 붙여야 한다.
-#     print(''.join(l_list))
