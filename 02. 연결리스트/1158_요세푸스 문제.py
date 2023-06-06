@@ -12,7 +12,6 @@ for i in range(n):
     if num >= len(arr):
         num = num%len(arr)
     
-    print(num)
     answer.append(str(arr.pop(num)))
 
 print("<", ", ".join(answer), ">", sep='')
