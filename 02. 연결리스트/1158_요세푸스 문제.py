@@ -1,32 +1,18 @@
 # 1158: 요세푸스 문제
+# https://infinitt.tistory.com/213
 
-# N, K = list(map(int, input().split()))
-# que = list(i for i in range(1, N+1))
-# answer = []
-# num = 1
-# while que:
-#     if num==3:
-#         num=1
-#         answer.append(que.pop(0))
-#     else:
-#         que.append(que.pop(0))
-#         num += 1
+n, k = list(map(int, input().split()))
 
-# answer1 = ', '.join(str(i) for i in answer)
-# print(f"<{answer1}>")
-
-n, k = map(int, input().split())
-arr = [i for i in range(1, n + 1)]
-answer = []
-num = k - 1
+arr = [i for i in range(1, n+1)]    # 처음 원에 앉을 사람들
+answer = []     # 제거된 사람들을 넣을 배열
+num = 0     # 제거될 사람의 인덱스 번호
 
 for i in range(n):
-    if len(arr) > num:
-        answer.append(arr.pop(num))
-        num += k - 1
-    elif len(arr) <= num:
-        num = num % len(arr)
-        answer.append(arr.pop(num))
-        num += k -1
-        
-print("<", ', '.join(str(i) for i in answer), ">", sep = '')
+    num += k-1
+    if num >= len(arr):
+        num = num%len(arr)
+    
+    print(num)
+    answer.append(str(arr.pop(num)))
+
+print("<", ", ".join(answer), ">", sep='')
