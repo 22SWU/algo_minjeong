@@ -16,6 +16,7 @@ public class B10807_개수세기 {
         for(int i=0; i<N; i++){
             arr[i] = Integer.parseInt(st.nextToken());
         }
+        
         int V = Integer.parseInt(br.readLine());
         int cnt = 0;
         for(int i:arr){
