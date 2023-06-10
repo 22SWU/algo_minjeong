@@ -1,6 +1,5 @@
 // 10809: 알파벳 찾기
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class B10809_알파벳찾기 {
