@@ -8,6 +8,7 @@ public class B10809_알파벳찾기 {
         String str = sc.nextLine();
         int[] arr = new int[26];
 
+        // -1 초기화
         for (int i=0; i<26; i++){
             arr[i] = -1;
         }
@@ -19,6 +20,7 @@ public class B10809_알파벳찾기 {
             }
         }
 
+        // 출력
         for(int i:arr){
             System.out.print(i+" ");
         }
