@@ -19,3 +19,4 @@ for _ in range(m):
         print(dict[int(quest)])
     else:
         print(dict[quest])
+        
