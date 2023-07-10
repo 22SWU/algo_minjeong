@@ -7,6 +7,7 @@ lst = list(map(int, input().split(" ")))
 
 # 누적합 ->
 # 9 18 22 23 27 36 45
+
 lrSum = []
 # for i in range(0, len(lst)):
 #     a = int(lrSum[-1]) + int(lst[i]) if lrSum else int(lst[i])
