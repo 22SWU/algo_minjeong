@@ -1,4 +1,5 @@
 # 20413: MVP 다이아몬드 (Easy)
+# https://www.acmicpc.net/problem/20413
 
 import sys
 input = sys.stdin.readline
