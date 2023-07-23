@@ -16,4 +16,5 @@ for i in range(n):
 			print(heapq.heappop(heap)[1])
 		else:
 			print(0)
+			
 	print(list(heap))
