@@ -31,7 +31,6 @@ for i in range(len(lst)):
     tmp //= 3
     stack.pop()
 
-
 # 결과 출력
 if stack:
   print(0)
