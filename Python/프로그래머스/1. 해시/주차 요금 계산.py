@@ -1,4 +1,4 @@
-# 주차 요금 계산
+# 주차 요금 계산 (NOT YET)
 # https://school.programmers.co.kr/learn/courses/30/lessons/92341?language=python3
 
 def solution(fees, records):
@@ -14,8 +14,6 @@ def solution(fees, records):
         if inout == "IN":
             carIn[carNum] = time
         else:
-            
-        
-        print(carIn)
+            print("error")
     
     return answer
